@@ -1,0 +1,32 @@
+/*!
+ * Onyx CSS Framework v1.0
+ * A comprehensive, production-ready CSS framework with 25+ components
+ * Designed exclusively for OnigiriJS
+ * 
+ * Copyright 2026 Onyx CSS
+ * BSD-3-Clause license
+ * 
+ * Color Palette: Inspired by Onyx gemstone
+ * Design Philosophy: Dark luxury meets geometric precision
+ */
+
+/* ============================================================================
+   RESPONSIVE UTILITIES
+============================================================================ */
+
+@media (max-width: 1024px) {
+    .lg\:hidden { display: none; }
+}
+
+@media (max-width: 768px) {
+    .md\:hidden { display: none; }
+    .md\:grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+    .md\:flex-col { flex-direction: column; }
+}
+
+@media (max-width: 640px) {
+    .sm\:hidden { display: none; }
+    .sm\:grid-cols-1 { grid-template-columns: 1fr; }
+    .sm\:flex-col { flex-direction: column; }
+    .sm\:text-center { text-align: center; }
+}

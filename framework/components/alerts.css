@@ -1,0 +1,103 @@
+/*!
+ * Onyx CSS Framework v1.0
+ * A comprehensive, production-ready CSS framework with 25+ components
+ * Designed exclusively for OnigiriJS
+ * 
+ * Copyright 2026 Onyx CSS
+ * BSD-3-Clause license
+ * 
+ * Color Palette: Inspired by Onyx gemstone
+ * Design Philosophy: Dark luxury meets geometric precision
+ */
+
+/* ============================================================================
+   ALERT & NOTIFICATION COMPONENTS
+   ============================================================================ */
+.alert {
+    padding: var(--space-4) var(--space-6);
+    border-radius: var(--radius-lg);
+    border: 1px solid;
+    margin-bottom: var(--space-4);
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+}
+
+.alert-success {
+    background-color: rgba(45, 212, 191, 0.1);
+    border-color: var(--color-success);
+    color: var(--onyx-emerald-light);
+}
+
+.alert-warning {
+    background-color: rgba(251, 191, 36, 0.1);
+    border-color: var(--color-warning);
+    color: var(--onyx-amber-light);
+}
+
+.alert-error {
+    background-color: rgba(239, 68, 68, 0.1);
+    border-color: var(--color-error);
+    color: var(--onyx-ruby-light);
+}
+
+.alert-info {
+    background-color: rgba(59, 130, 246, 0.1);
+    border-color: var(--color-info);
+    color: var(--onyx-sapphire-light);
+}
+
+.alert-icon {
+    flex-shrink: 0;
+    font-size: 1.25em;
+}
+
+.alert-content {
+    flex: 1;
+}
+
+.alert-title {
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--space-1);
+}
+
+.alert-close {
+    background: none;
+    border: none;
+    color: currentColor;
+    cursor: pointer;
+    padding: 0;
+    margin-left: auto;
+    opacity: 0.7;
+    transition: opacity var(--transition-fast);
+}
+
+.alert-close:hover {
+    opacity: 1;
+}
+
+/* Toast Notifications */
+.toast {
+    position: fixed;
+    bottom: var(--space-6);
+    right: var(--space-6);
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-xl);
+    padding: var(--space-4) var(--space-6);
+    box-shadow: var(--shadow-xl);
+    max-width: 400px;
+    z-index: var(--z-tooltip);
+    animation: slideInRight var(--transition-base);
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

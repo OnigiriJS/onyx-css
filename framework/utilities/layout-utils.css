@@ -1,0 +1,29 @@
+/*!
+ * Onyx CSS Framework v1.0
+ * A comprehensive, production-ready CSS framework with 25+ components
+ * Designed exclusively for OnigiriJS
+ * 
+ * Copyright 2026 Onyx CSS
+ * BSD-3-Clause license
+ * 
+ * Color Palette: Inspired by Onyx gemstone
+ * Design Philosophy: Dark luxury meets geometric precision
+ */
+
+/* Cursor */
+.cursor-auto { cursor: auto; }
+.cursor-pointer { cursor: pointer; }
+.cursor-not-allowed { cursor: not-allowed; }
+
+/* Overflow */
+.overflow-auto { overflow: auto; }
+.overflow-hidden { overflow: hidden; }
+.overflow-scroll { overflow: scroll; }
+.overflow-x-auto { overflow-x: auto; }
+.overflow-y-auto { overflow-y: auto; }
+
+/* Width & Height */
+.w-full { width: 100%; }
+.h-full { height: 100%; }
+.w-screen { width: 100vw; }
+.h-screen { height: 100vh; }

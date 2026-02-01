@@ -1,0 +1,22 @@
+/*!
+ * Onyx CSS Framework v1.0
+ * A comprehensive, production-ready CSS framework with 25+ components
+ * Designed exclusively for OnigiriJS
+ * 
+ * Copyright 2026 Onyx CSS
+ * BSD-3-Clause license
+ * 
+ * Color Palette: Inspired by Onyx gemstone
+ * Design Philosophy: Dark luxury meets geometric precision
+ */
+
+.text-primary
+{ color: var(--text-primary); }
+.text-secondary { color: var(--text-secondary); }
+.text-muted { color: var(--text-muted); }
+.text-success { color: var(--color-success); }
+.text-warning { color: var(--color-warning); }
+.text-error { color: var(--color-error); }
+.text-info { color: var(--color-info); }
+
+/* Background Colors */

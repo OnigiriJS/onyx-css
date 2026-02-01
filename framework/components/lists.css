@@ -1,0 +1,47 @@
+/*!
+ * Onyx CSS Framework v1.0
+ * A comprehensive, production-ready CSS framework with 25+ components
+ * Designed exclusively for OnigiriJS
+ * 
+ * Copyright 2026 Onyx CSS
+ * BSD-3-Clause license
+ * 
+ * Color Palette: Inspired by Onyx gemstone
+ * Design Philosophy: Dark luxury meets geometric precision
+ */
+
+/* ============================================================================
+   LIST COMPONENTS
+   ============================================================================ */
+.list-group {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+}
+
+.list-group-item {
+    padding: var(--space-4) var(--space-6);
+    background-color: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-primary);
+    transition: var(--transition-fast);
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
+
+.list-group-item:hover {
+    background-color: var(--bg-hover);
+}
+
+.list-group-item.active {
+    background-color: var(--color-primary);
+    color: var(--text-inverse);
+    border-color: var(--color-primary);
+}
+
+.list-group-item-action {
+    cursor: pointer;
+}

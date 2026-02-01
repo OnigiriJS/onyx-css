@@ -1,0 +1,73 @@
+/*!
+ * Onyx CSS Framework v1.0
+ * A comprehensive, production-ready CSS framework with 25+ components
+ * Designed exclusively for OnigiriJS
+ * 
+ * Copyright 2026 Onyx CSS
+ * BSD-3-Clause license
+ * 
+ * Color Palette: Inspired by Onyx gemstone
+ * Design Philosophy: Dark luxury meets geometric precision
+ */
+
+/* ============================================================================
+   TOOLTIP & POPOVER COMPONENTS
+   ============================================================================ */
+.tooltip {
+    position: absolute;
+    z-index: var(--z-tooltip);
+    background-color: var(--onyx-gray-900);
+    color: var(--text-primary);
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius-lg);
+    font-size: var(--font-size-sm);
+    white-space: nowrap;
+    box-shadow: var(--shadow-lg);
+    pointer-events: none;
+}
+
+.tooltip-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.tooltip-top .tooltip-arrow {
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 4px 4px 0 4px;
+    border-color: var(--onyx-gray-900) transparent transparent transparent;
+}
+
+.tooltip-bottom .tooltip-arrow {
+    top: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 0 4px 4px 4px;
+    border-color: transparent transparent var(--onyx-gray-900) transparent;
+}
+
+/* Popover */
+.popover {
+    position: absolute;
+    z-index: var(--z-popover);
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-xl);
+    max-width: 300px;
+    padding: var(--space-4);
+}
+
+.popover-title {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--space-2);
+}
+
+.popover-content {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+}

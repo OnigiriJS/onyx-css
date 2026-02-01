@@ -1,0 +1,76 @@
+/*!
+ * Onyx CSS Framework v1.0
+ * A comprehensive, production-ready CSS framework with 25+ components
+ * Designed exclusively for OnigiriJS
+ * 
+ * Copyright 2026 Onyx CSS
+ * BSD-3-Clause license
+ * 
+ * Color Palette: Inspired by Onyx gemstone
+ * Design Philosophy: Dark luxury meets geometric precision
+ */
+
+/* ============================================================================
+   ACCORDION COMPONENTS
+   ============================================================================ */
+.accordion {
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+}
+
+.accordion-item {
+    border-bottom: 1px solid var(--border-primary);
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-header {
+    width: 100%;
+    padding: var(--space-4) var(--space-6);
+    background-color: var(--bg-secondary);
+    border: none;
+    text-align: left;
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: var(--transition-fast);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion-header:hover {
+    background-color: var(--bg-hover);
+}
+
+.accordion-header.active {
+    background-color: var(--bg-tertiary);
+    color: var(--color-primary);
+}
+
+.accordion-icon {
+    transition: transform var(--transition-base);
+}
+
+.accordion-header.active .accordion-icon {
+    transform: rotate(180deg);
+}
+
+.accordion-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-base);
+}
+
+.accordion-body.active {
+    max-height: 1000px;
+}
+
+.accordion-content {
+    padding: var(--space-6);
+    color: var(--text-secondary);
+}

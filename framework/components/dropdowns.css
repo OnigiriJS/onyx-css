@@ -1,0 +1,106 @@
+/*!
+ * Onyx CSS Framework v1.0
+ * A comprehensive, production-ready CSS framework with 25+ components
+ * Designed exclusively for OnigiriJS
+ * 
+ * Copyright 2026 Onyx CSS
+ * BSD-3-Clause license
+ * 
+ * Color Palette: Inspired by Onyx gemstone
+ * Design Philosophy: Dark luxury meets geometric precision
+ */
+
+/* ============================================================================
+   DROPDOWN COMPONENTS
+   ============================================================================ */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + var(--space-2));
+    left: 0;
+    min-width: 200px;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-xl);
+    padding: var(--space-2);
+    z-index: var(--z-dropdown);
+    display: none;
+}
+
+.dropdown-menu.active {
+    display: block;
+    animation: dropdownFadeIn var(--transition-fast);
+}
+
+@keyframes dropdownFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-3) var(--space-4);
+    color: var(--text-primary);
+    text-decoration: none;
+    border-radius: var(--radius-lg);
+    transition: var(--transition-fast);
+    cursor: pointer;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    font-size: var(--font-size-base);
+}
+
+.dropdown-item:hover {
+    background-color: var(--bg-hover);
+    color: var(--color-primary);
+}
+
+.dropdown-item.active {
+    background-color: var(--color-primary);
+    color: var(--text-inverse);
+}
+
+.dropdown-divider {
+    height: 1px;
+    background-color: var(--border-primary);
+    margin: var(--space-2) 0;
+}
+
+.dropdown-header {
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wider);
+}
+
+/* Dropdown Positions */
+.dropdown-menu-right {
+    left: auto;
+    right: 0;
+}
+
+.dropdown-menu-top {
+    top: auto;
+    bottom: calc(100% + var(--space-2));
+}

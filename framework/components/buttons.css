@@ -1,0 +1,194 @@
+/*!
+ * Onyx CSS Framework v1.0
+ * A comprehensive, production-ready CSS framework with 25+ components
+ * Designed exclusively for OnigiriJS
+ * 
+ * Copyright 2026 Onyx CSS
+ * BSD-3-Clause license
+ * 
+ * Color Palette: Inspired by Onyx gemstone
+ * Design Philosophy: Dark luxury meets geometric precision
+ */
+
+/* ============================================================================
+   BUTTON COMPONENTS
+   ============================================================================ */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-6);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: var(--radius-lg);
+    cursor: pointer;
+    transition: var(--transition-all);
+    user-select: none;
+    white-space: nowrap;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* Button Variants */
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--text-inverse);
+    box-shadow: 0 4px 14px rgba(45, 212, 191, 0.4);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-glow);
+}
+
+.btn-secondary {
+    background-color: var(--color-secondary);
+    color: var(--text-inverse);
+}
+
+.btn-secondary:hover {
+    background-color: var(--onyx-sapphire-light);
+    transform: translateY(-2px);
+}
+
+.btn-success {
+    background-color: var(--color-success);
+    color: var(--text-inverse);
+}
+
+.btn-warning {
+    background-color: var(--color-warning);
+    color: var(--onyx-black);
+}
+
+.btn-error {
+    background-color: var(--color-error);
+    color: var(--text-inverse);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border-color: var(--border-primary);
+    color: var(--text-primary);
+}
+
+.btn-outline:hover {
+    background-color: var(--bg-hover);
+    border-color: var(--color-primary);
+}
+
+.btn-ghost {
+    background-color: transparent;
+    color: var(--text-primary);
+}
+
+.btn-ghost:hover {
+    background-color: var(--bg-hover);
+}
+
+.btn-link {
+    background-color: transparent;
+    color: var(--color-primary);
+    padding: 0;
+    border: none;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+
+/* Button Sizes */
+.btn-xs {
+    padding: var(--space-1) var(--space-2);
+    font-size: var(--font-size-xs);
+}
+
+.btn-sm {
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--font-size-sm);
+}
+
+.btn-lg {
+    padding: var(--space-4) var(--space-8);
+    font-size: var(--font-size-lg);
+}
+
+.btn-xl {
+    padding: var(--space-5) var(--space-10);
+    font-size: var(--font-size-xl);
+}
+
+/* Button States */
+.btn-block {
+    display: flex;
+    width: 100%;
+}
+
+.btn-group {
+    display: inline-flex;
+    gap: 0;
+}
+
+.btn-group .btn {
+    border-radius: 0;
+}
+
+.btn-group .btn:first-child {
+    border-top-left-radius: var(--radius-lg);
+    border-bottom-left-radius: var(--radius-lg);
+}
+
+.btn-group .btn:last-child {
+    border-top-right-radius: var(--radius-lg);
+    border-bottom-right-radius: var(--radius-lg);
+}
+
+/* Icon Buttons */
+.btn-icon {
+    padding: var(--space-3);
+    aspect-ratio: 1;
+}
+
+.btn-icon-sm {
+    padding: var(--space-2);
+}
+
+.btn-icon-lg {
+    padding: var(--space-4);
+}
+
+/* Loading Button */
+.btn-loading {
+    position: relative;
+    color: transparent;
+    pointer-events: none;
+}
+
+.btn-loading::after {
+    content: '';
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    top: 50%;
+    left: 50%;
+    margin-left: -0.5em;
+    margin-top: -0.5em;
+    border: 2px solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}

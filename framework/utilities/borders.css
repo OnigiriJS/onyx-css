@@ -1,0 +1,26 @@
+/*!
+ * Onyx CSS Framework v1.0
+ * A comprehensive, production-ready CSS framework with 25+ components
+ * Designed exclusively for OnigiriJS
+ * 
+ * Copyright 2026 Onyx CSS
+ * BSD-3-Clause license
+ * 
+ * Color Palette: Inspired by Onyx gemstone
+ * Design Philosophy: Dark luxury meets geometric precision
+ */
+
+/* Border */
+.border { border: 1px solid var(--border-primary); }
+.border-0 { border: none; }
+.border-top { border-top: 1px solid var(--border-primary); }
+.border-bottom { border-bottom: 1px solid var(--border-primary); }
+.border-left { border-left: 1px solid var(--border-primary); }
+.border-right { border-right: 1px solid var(--border-primary); }
+
+/* Border Radius */
+.rounded-none { border-radius: 0; }
+.rounded-sm { border-radius: var(--radius-sm); }
+.rounded { border-radius: var(--radius-lg); }
+.rounded-lg { border-radius: var(--radius-xl); }
+.rounded-full { border-radius: var(--radius-full); }

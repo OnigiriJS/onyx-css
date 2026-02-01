@@ -1,0 +1,142 @@
+/*!
+ * Onyx CSS Framework v1.0
+ * A comprehensive, production-ready CSS framework with 25+ components
+ * Designed exclusively for OnigiriJS
+ * 
+ * Copyright 2026 Onyx CSS
+ * BSD-3-Clause license
+ * 
+ * Color Palette: Inspired by Onyx gemstone
+ * Design Philosophy: Dark luxury meets geometric precision
+ */
+
+/* ============================================================================
+   RESET & BASE STYLES
+   ============================================================================ */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    font-family: var(--font-sans);
+    font-size: var(--font-size-base);
+    line-height: var(--leading-normal);
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+    transition: background-color var(--transition-base), color var(--transition-base);
+}
+
+/* ============================================================================
+   TYPOGRAPHY COMPONENTS
+   ============================================================================ */
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--font-weight-bold);
+    line-height: var(--leading-tight);
+    color: var(--text-primary);
+    margin-bottom: var(--space-4);
+}
+
+h1 { font-size: var(--font-size-5xl); }
+h2 { font-size: var(--font-size-4xl); }
+h3 { font-size: var(--font-size-3xl); }
+h4 { font-size: var(--font-size-2xl); }
+h5 { font-size: var(--font-size-xl); }
+h6 { font-size: var(--font-size-lg); }
+
+p {
+    margin-bottom: var(--space-4);
+    line-height: var(--leading-relaxed);
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+a:hover {
+    color: var(--color-primary-hover);
+}
+
+strong, b {
+    font-weight: var(--font-weight-bold);
+}
+
+em, i {
+    font-style: italic;
+}
+
+small {
+    font-size: var(--font-size-sm);
+}
+
+mark {
+    background-color: var(--onyx-amber);
+    color: var(--onyx-black);
+    padding: 0.125rem 0.25rem;
+    border-radius: var(--radius-sm);
+}
+
+code {
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+    background-color: var(--bg-tertiary);
+    padding: 0.2em 0.4em;
+    border-radius: var(--radius-base);
+    color: var(--onyx-emerald);
+}
+
+pre {
+    font-family: var(--font-mono);
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-lg);
+    padding: var(--space-4);
+    overflow-x: auto;
+    margin-bottom: var(--space-4);
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+}
+
+blockquote {
+    border-left: 4px solid var(--color-primary);
+    padding-left: var(--space-4);
+    margin: var(--space-6) 0;
+    font-style: italic;
+    color: var(--text-secondary);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--border-primary);
+    margin: var(--space-8) 0;
+}
+
+/* Text Utilities */
+.text-gradient {
+    background: linear-gradient(135deg, var(--onyx-emerald), var(--onyx-sapphire));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, var(--onyx-emerald), var(--onyx-sapphire));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}

@@ -1,0 +1,81 @@
+/*!
+ * Onyx CSS Framework v1.0
+ * A comprehensive, production-ready CSS framework with 25+ components
+ * Designed exclusively for OnigiriJS
+ * 
+ * Copyright 2026 Onyx CSS
+ * BSD-3-Clause license
+ * 
+ * Color Palette: Inspired by Onyx gemstone
+ * Design Philosophy: Dark luxury meets geometric precision
+ */
+
+/* ============================================================================
+   TABLE COMPONENTS
+   ============================================================================ */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+}
+
+.table thead {
+    background-color: var(--bg-tertiary);
+}
+
+.table th {
+    padding: var(--space-4) var(--space-6);
+    text-align: left;
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-sm);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wider);
+    color: var(--text-secondary);
+    border-bottom: 2px solid var(--border-primary);
+}
+
+.table td {
+    padding: var(--space-4) var(--space-6);
+    border-bottom: 1px solid var(--border-primary);
+}
+
+.table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.table tbody tr:hover {
+    background-color: var(--bg-hover);
+}
+
+/* Table Variants */
+.table-striped tbody tr:nth-child(even) {
+    background-color: var(--bg-tertiary);
+}
+
+.table-bordered {
+    border: 1px solid var(--border-primary);
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid var(--border-primary);
+}
+
+.table-sm th,
+.table-sm td {
+    padding: var(--space-2) var(--space-3);
+}
+
+.table-lg th,
+.table-lg td {
+    padding: var(--space-6) var(--space-8);
+}
+
+/* Responsive Table */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}

@@ -1,0 +1,77 @@
+/*!
+ * Onyx CSS Framework v1.0
+ * A comprehensive, production-ready CSS framework with 25+ components
+ * Designed exclusively for OnigiriJS
+ * 
+ * Copyright 2026 Onyx CSS
+ * BSD-3-Clause license
+ * 
+ * Color Palette: Inspired by Onyx gemstone
+ * Design Philosophy: Dark luxury meets geometric precision
+ */
+
+/* ============================================================================
+   AVATAR & IMAGE COMPONENTS
+   ============================================================================ */
+.avatar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-full);
+    background-color: var(--bg-tertiary);
+    color: var(--text-primary);
+    font-weight: var(--font-weight-semibold);
+    overflow: hidden;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avatar-xs { width: 24px; height: 24px; font-size: var(--font-size-xs); }
+.avatar-sm { width: 32px; height: 32px; font-size: var(--font-size-sm); }
+.avatar-lg { width: 56px; height: 56px; font-size: var(--font-size-lg); }
+.avatar-xl { width: 72px; height: 72px; font-size: var(--font-size-xl); }
+.avatar-2xl { width: 96px; height: 96px; font-size: var(--font-size-2xl); }
+
+.avatar-square {
+    border-radius: var(--radius-lg);
+}
+
+.avatar-group {
+    display: inline-flex;
+}
+
+.avatar-group .avatar {
+    margin-left: -8px;
+    border: 2px solid var(--bg-primary);
+}
+
+.avatar-group .avatar:first-child {
+    margin-left: 0;
+}
+
+/* Image */
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-rounded {
+    border-radius: var(--radius-xl);
+}
+
+.img-circle {
+    border-radius: var(--radius-full);
+}
+
+.img-thumbnail {
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-lg);
+    padding: var(--space-1);
+    background-color: var(--bg-secondary);
+}

@@ -1,0 +1,107 @@
+/*!
+ * Onyx CSS Framework v1.0
+ * A comprehensive, production-ready CSS framework with 25+ components
+ * Designed exclusively for OnigiriJS
+ * 
+ * Copyright 2026 Onyx CSS
+ * BSD-3-Clause license
+ * 
+ * Color Palette: Inspired by Onyx gemstone
+ * Design Philosophy: Dark luxury meets geometric precision
+ */
+
+/* ============================================================================
+   CARD COMPONENTS
+   ============================================================================ */
+.card {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-xl);
+    padding: var(--space-6);
+    transition: var(--transition-all);
+}
+
+.card:hover {
+    border-color: var(--border-hover);
+}
+
+.card-hover {
+    cursor: pointer;
+}
+
+.card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.card-glow {
+    position: relative;
+}
+
+.card-glow::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    background: linear-gradient(135deg, var(--onyx-emerald), var(--onyx-sapphire));
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity var(--transition-base);
+    z-index: -1;
+}
+
+.card-glow:hover::before {
+    opacity: 1;
+}
+
+.card-header {
+    padding-bottom: var(--space-4);
+    border-bottom: 1px solid var(--border-primary);
+    margin-bottom: var(--space-4);
+}
+
+.card-title {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    margin: 0;
+}
+
+.card-subtitle {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    margin-top: var(--space-2);
+}
+
+.card-body {
+    flex: 1;
+}
+
+.card-footer {
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--border-primary);
+    margin-top: var(--space-4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--space-4);
+}
+
+/* Card Variants */
+.card-bordered {
+    border-width: 2px;
+}
+
+.card-shadow {
+    box-shadow: var(--shadow-lg);
+}
+
+.card-flat {
+    box-shadow: none;
+    border: none;
+    background-color: var(--bg-tertiary);
+}
