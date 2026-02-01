@@ -1,10 +1,11 @@
-# 💎 Onyx CSS Framework - Modular Edition
+# 💎 Onyx CSS Framework
 
 ## Quick Start
 
 ### Option 1: Full Bundle
 ```html
 <link rel="stylesheet" href="framework/onyx.css">
+<link rel="stylesheet" href="framework/onyx.min.css"> // Optional
 ```
 
 ### Option 2: Modular (Recommended)
